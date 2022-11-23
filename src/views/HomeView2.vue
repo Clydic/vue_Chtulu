@@ -3,16 +3,17 @@
     <h1>{{title}}</h1>
   </header>
   <main>
+   <CaracEtAttribut/>
   </main>
 </template>
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-const { createApp } = Vue;
-  createApp({
+<script>
+import CaracEtAttribut from '../components/CaracEtAttribut.vue'
+ export default {
+  components: { CaracEtAttribut },
     data() {
       return {
         title : 'Chtulu'
       }
     },
-  })
+  }
 </script>
